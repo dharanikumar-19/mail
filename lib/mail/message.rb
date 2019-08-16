@@ -1765,6 +1765,7 @@ module Mail
         filedata = values
       end
       self.attachments[basename] = filedata
+      self
     end
 
     MULTIPART_CONVERSION_CONTENT_FIELDS = [ :content_description, :content_disposition, :content_transfer_encoding, :content_type ]
